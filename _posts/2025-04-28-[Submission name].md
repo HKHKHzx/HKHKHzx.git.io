@@ -35,7 +35,7 @@ bibliography: 2025-04-28-distill-example.bib
 #     for hyperlinks within the post to work correctly. 
 #   - please use this format rather than manually creating a markdown table of contents.
 toc:
-  - name: Equations
+  - name: Introduction
   - name: Images and Figures
     subsections:
     - name: Interactive Figures
@@ -69,7 +69,7 @@ _styles: >
 
 Note: please use the table of contents as defined in the front matter rather than the traditional markdown styling.
 
-## Equations
+## Introduction
 
 This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine.
 You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`.

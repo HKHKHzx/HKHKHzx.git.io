@@ -36,16 +36,21 @@ bibliography: 2025-04-28-distill-example.bib
 #   - please use this format rather than manually creating a markdown table of contents.
 toc:
   - name: Introduction
-  - name: Images and Figures
+  - name: Quantization
     subsections:
-    - name: Interactive Figures
-  - name: Citations
-  - name: Footnotes
-  - name: Code Blocks
-  - name: Diagrams
-  - name: Tweets
-  - name: Layouts
-  - name: Other Typography?
+    - name: Dynamic Quantization
+    - name: Static Quantization / Post-Training Static Quantization
+    - name: Quantization aware training
+  - name: Low-Precision Training
+    subsections:
+    - name : QuEST
+    - name : Jetfire
+    - name : FP4 Quantization
+  - name: A Recent Study on Low-Precision Training
+  - name: Adaptive Per-Block Quantization
+  - name: Experimental Section
+  - name: Conclusion
+
 
 # Below is an example of injecting additional post-specific styles.
 # This is used in the 'Layouts' section of this post.

@@ -42,11 +42,11 @@ toc:
     - name: Static Quantization / Post-Training Static Quantization
     - name: Quantization aware training
   - name: Low-Precision Training
+  - name: A Recent Study on Low-Precision Training
     subsections:
     - name : QuEST
     - name : Jetfire
     - name : FP4 Quantization
-  - name: A Recent Study on Low-Precision Training
   - name: Adaptive Per-Block Quantization
   - name: Experimental Section
   - name: Conclusion
@@ -92,15 +92,18 @@ that brought a significant improvement to the loading and rendering speed, which
 [on par with KaTeX](http://www.intmath.com/cg5/katex-mathjax-comparison.php).
 
 
-## Images and Figures
+## Quantization
 
 Its generally a better idea to avoid linking to images hosted elsewhere - links can break and you
 might face losing important information in your blog post.
 To include images in your submission in this way, you must do something like the following:
 
 ```markdown
-{% raw %}{% include figure.html path="assets/img/2025-04-28-distill-example/iclr.png" class="img-fluid" %}{% endraw %}
+{% raw %}{% include figure.html path="assets/img/2025-04-28-[SUBMISSION NAME].png" class="img-fluid" %}{% endraw %}
 ```
+
+{% raw %}{% include figure.html path="assets/img/2025-04-28-Quantization/my.png" class="img-fluid" %}{% endraw %}
+
 
 which results in the following image:
 
@@ -114,7 +117,7 @@ Some more complex ways to load images (note the different styles of the shapes/s
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-distill-example/9.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/2025-04-28-Quantization/9.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/2025-04-28-distill-example/7.jpg" class="img-fluid rounded z-depth-1" %}
@@ -145,7 +148,9 @@ Some more complex ways to load images (note the different styles of the shapes/s
     </div>
 </div>
 
-### Interactive Figures
+### Dynamic Quantization
+### Static Quantization / Post-Training Static Quantization
+### Quantization aware training
 
 Here's how you could embed interactive figures that have been exported as HTML files.
 Note that we will be using plotly for this demo, but anything built off of HTML should work
@@ -188,7 +193,8 @@ Voila!
   <iframe src="{{ 'assets/html/2025-04-28-distill-example/plotly_demo_1.html' | relative_url }}" frameborder='0' scrolling='no' height="600px" width="100%"></iframe>
 </div>
 
-## Citations
+## Low-Precision Training
+## A Recent Study on Low-Precision Training
 
 Citations are then used in the article body with the `<d-cite>` tag.
 The key attribute is a reference to the id provided in the bibliography.
@@ -202,14 +208,16 @@ However, we consider it good style to mention author last names if you discuss s
 
 ***
 
-## Footnotes
+### QuEST
+### Jetfier
+### FP4 Quantization
 
 Just wrap the text you would like to show up in a footnote in a `<d-footnote>` tag.
 The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote>
 
 ***
 
-## Code Blocks
+## Adaptive Per-Block Quantization
 
 This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting.
 It supports more than 100 languages.
@@ -246,7 +254,7 @@ string myString;
 
 ***
 
-## Diagrams
+## Experimental Section
 
 This theme supports generating various diagrams from a text description using [jekyll-diagrams](https://github.com/zhustec/jekyll-diagrams){:target="\_blank"} plugin.
 Below, we generate a few examples of such diagrams using languages such as [mermaid](https://mermaid-js.github.io/mermaid/){:target="\_blank"}, [plantuml](https://plantuml.com/){:target="\_blank"}, [vega-lite](https://vega.github.io/vega-lite/){:target="\_blank"}, etc.
@@ -281,7 +289,7 @@ John-->>Alice: Great!
 
 ***
 
-## Tweets
+## Conclusion
 
 An example of displaying a tweet:
 {% twitter https://twitter.com/rubygems/status/518821243320287232 %}
